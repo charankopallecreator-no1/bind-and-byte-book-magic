@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles, BookOpen, Palette } from "lucide-react";
 import heroBanner from "@/assets/hero-banner.jpg";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -122,6 +123,8 @@ const Home = () => {
           </Link>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

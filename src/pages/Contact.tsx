@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { Mail, MessageCircle, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -108,6 +109,8 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
