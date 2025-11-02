@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { BookOpen } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const location = useLocation();
@@ -14,10 +14,12 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-md border-b-2 border-border shadow-card">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="bg-primary text-primary-foreground p-2 rounded-xl shadow-playful group-hover:shadow-hover transition-all duration-300 group-hover:scale-110">
-              <BookOpen className="w-6 h-6" />
-            </div>
+          <Link to="/" className="flex items-center gap-3 group">
+            <img 
+              src={logo} 
+              alt="Bind & Byte logo" 
+              className="w-12 h-12 rounded-xl shadow-playful group-hover:shadow-hover transition-all duration-300 group-hover:scale-110"
+            />
             <span className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               Bind & Byte
             </span>
