@@ -80,10 +80,31 @@ export default {
             height: "0",
           },
         },
+        bounce: {
+          "0%, 100%": {
+            transform: "translateY(-5%)",
+            animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translateY(0)",
+            animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
+          },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "bounce-slow": "bounce 3s ease-in-out infinite",
+        float: "float 6s ease-in-out infinite",
+      },
+      boxShadow: {
+        playful: "0 8px 24px -8px hsl(var(--primary) / 0.3)",
+        card: "0 4px 16px -4px hsl(var(--foreground) / 0.1)",
+        hover: "0 12px 32px -8px hsl(var(--primary) / 0.4)",
       },
     },
   },
