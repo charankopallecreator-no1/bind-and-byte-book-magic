@@ -5,7 +5,7 @@ const Footer = () => {
     {
       icon: Instagram,
       label: "Instagram",
-      url: "https://instagram.com/bindandbyte",
+      url: "https://www.instagram.com/bind_and_byte/",
       color: "hover:text-primary"
     },
     {
@@ -17,7 +17,7 @@ const Footer = () => {
     {
       icon: MessageCircle,
       label: "WhatsApp",
-      url: "https://wa.me/1234567890",
+      url: "https://wa.me/919908011844",
       color: "hover:text-secondary"
     },
     {

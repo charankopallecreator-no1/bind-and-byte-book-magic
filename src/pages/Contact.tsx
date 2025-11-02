@@ -16,7 +16,7 @@ const contactMethods = [
     icon: MessageCircle,
     label: "WhatsApp",
     description: "Chat with us directly",
-    action: "https://wa.me/1234567890",
+    action: "https://wa.me/919908011844",
     color: "secondary",
     buttonText: "Open WhatsApp"
   },
@@ -24,7 +24,7 @@ const contactMethods = [
     icon: Instagram,
     label: "Instagram",
     description: "See our latest work",
-    action: "https://instagram.com/bindandbyte",
+    action: "https://www.instagram.com/bind_and_byte/",
     color: "accent",
     buttonText: "Follow Us"
   }
