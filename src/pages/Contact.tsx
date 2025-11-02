@@ -67,16 +67,15 @@ const Contact = () => {
                   <h3 className="text-2xl font-bold mb-2">{method.label}</h3>
                   <p className="text-muted-foreground mb-6">{method.description}</p>
                   
-                  <a
-                    href={method.action}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    <Button className="w-full" size="lg">
+                  <Button className="w-full" size="lg" asChild>
+                    <a
+                      href={method.action}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {method.buttonText}
-                    </Button>
-                  </a>
+                    </a>
+                  </Button>
                 </div>
               );
             })}
