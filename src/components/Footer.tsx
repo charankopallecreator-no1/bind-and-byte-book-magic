@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-3 md:space-y-4 sm:col-span-2 md:col-span-1">
             <h3 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              Bind & Byte
+              InkNova Studios
             </h3>
             <p className="text-sm md:text-base text-muted-foreground">
               Crafting captivating books where imagination takes shape and stories find form.
@@ -91,7 +91,7 @@ const Footer = () => {
         <div className="pt-6 md:pt-8 border-t border-border text-center">
           <p className="text-xs md:text-sm text-muted-foreground flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
             <span className="flex items-center gap-1">
-              Made with <Heart className="w-3 h-3 md:w-4 md:h-4 text-primary fill-primary animate-pulse" /> by Bind & Byte
+              Made with <Heart className="w-3 h-3 md:w-4 md:h-4 text-primary fill-primary animate-pulse" /> by InkNova Studios
             </span>
             <span className="hidden sm:inline">•</span>
             <span>© {new Date().getFullYear()} All rights reserved</span>
