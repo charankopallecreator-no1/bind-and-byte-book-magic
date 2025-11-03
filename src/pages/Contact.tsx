@@ -35,37 +35,37 @@ const Contact = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <section className="pt-32 pb-20">
+      <section className="pt-24 md:pt-32 pb-12 md:pb-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <div className="text-center mb-10 md:mb-16">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
               Get in{" "}
               <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 Touch
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
+            <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-3 md:mb-4 px-4">
               Ready to bring your book to life? Reach out to book or order a design.
             </p>
-            <p className="text-lg font-medium text-foreground">
+            <p className="text-base md:text-lg font-medium text-foreground">
               We're excited to hear about your project!
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
             {contactMethods.map((method, index) => {
               const Icon = method.icon;
               return (
                 <div
                   key={index}
-                  className="bg-card rounded-2xl p-8 shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-2 text-center group"
+                  className="bg-card rounded-2xl p-6 md:p-8 shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-2 text-center group sm:col-span-1"
                 >
-                  <div className={`bg-${method.color}/10 text-${method.color} w-20 h-20 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform shadow-playful`}>
-                    <Icon className="w-10 h-10" />
+                  <div className={`bg-${method.color}/10 text-${method.color} w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center mb-4 md:mb-6 mx-auto group-hover:scale-110 transition-transform shadow-playful`}>
+                    <Icon className="w-8 h-8 md:w-10 md:h-10" />
                   </div>
                   
-                  <h3 className="text-2xl font-bold mb-2">{method.label}</h3>
-                  <p className="text-muted-foreground mb-6">{method.description}</p>
+                  <h3 className="text-xl md:text-2xl font-bold mb-2">{method.label}</h3>
+                  <p className="text-sm md:text-base text-muted-foreground mb-5 md:mb-6">{method.description}</p>
                   
                   <Button className="w-full" size="lg" asChild>
                     <a
@@ -81,27 +81,27 @@ const Contact = () => {
             })}
           </div>
 
-          <div className="mt-20 text-center max-w-3xl mx-auto">
-            <div className="bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 rounded-2xl p-12 shadow-card">
-              <h2 className="text-3xl font-bold mb-4">Why Work With Us?</h2>
-              <div className="grid md:grid-cols-3 gap-6 mt-8">
-                <div className="space-y-2">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <div className="mt-12 md:mt-20 text-center max-w-3xl mx-auto">
+            <div className="bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 rounded-2xl p-6 md:p-12 shadow-card">
+              <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Why Work With Us?</h2>
+              <div className="grid grid-cols-3 gap-4 md:gap-6 mt-6 md:mt-8">
+                <div className="space-y-1 md:space-y-2">
+                  <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                     5+
                   </div>
-                  <p className="text-sm text-muted-foreground">Years Experience</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Years Experience</p>
                 </div>
-                <div className="space-y-2">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+                <div className="space-y-1 md:space-y-2">
+                  <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
                     100+
                   </div>
-                  <p className="text-sm text-muted-foreground">Books Designed</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Books Designed</p>
                 </div>
-                <div className="space-y-2">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
+                <div className="space-y-1 md:space-y-2">
+                  <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
                     ⭐⭐⭐⭐⭐
                   </div>
-                  <p className="text-sm text-muted-foreground">Client Satisfaction</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Client Satisfaction</p>
                 </div>
               </div>
             </div>

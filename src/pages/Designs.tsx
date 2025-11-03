@@ -51,16 +51,16 @@ const Designs = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <section className="pt-32 pb-20">
+      <section className="pt-24 md:pt-32 pb-12 md:pb-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <div className="text-center mb-10 md:mb-16">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
               Our{" "}
               <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 Designs
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               A showcase of our creative book covers and designs, each one crafted with passion and imagination.
             </p>
           </div>
@@ -96,14 +96,14 @@ const Designs = () => {
             ))}
           </div>
 
-          <div className="mt-16 text-center">
-            <div className="bg-card rounded-2xl p-8 shadow-card max-w-2xl mx-auto">
-              <h2 className="text-3xl font-bold mb-4">Like what you see?</h2>
-              <p className="text-muted-foreground mb-6">
+          <div className="mt-12 md:mt-16 text-center">
+            <div className="bg-card rounded-2xl p-6 md:p-8 shadow-card max-w-2xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Like what you see?</h2>
+              <p className="text-sm md:text-base text-muted-foreground mb-5 md:mb-6">
                 These are just a few examples of our work. We'd love to create something unique for your book!
               </p>
               <a href="/contact">
-                <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium shadow-playful hover:shadow-hover hover:scale-105 transition-all duration-300">
+                <button className="bg-primary text-primary-foreground px-6 md:px-8 py-2.5 md:py-3 rounded-lg font-medium shadow-playful hover:shadow-hover hover:scale-105 transition-all duration-300 w-full sm:w-auto">
                   Let's Work Together
                 </button>
               </a>
