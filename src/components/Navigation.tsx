@@ -20,12 +20,9 @@ const Navigation = () => {
           <Link to="/" className="flex items-center gap-2 md:gap-3 group">
             <img 
               src={logo} 
-              alt="InkNova Studios logo" 
-              className="w-10 h-10 md:w-12 md:h-12 rounded-xl shadow-playful group-hover:shadow-hover transition-all duration-300 group-hover:scale-110"
+              alt="InkNova Studios - Creative Book Design Logo" 
+              className="w-10 h-10 md:w-12 md:h-12 rounded-xl object-contain shadow-playful group-hover:shadow-hover transition-all duration-300 group-hover:scale-110"
             />
-            <span className="text-lg md:text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              InkNova Studios
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
